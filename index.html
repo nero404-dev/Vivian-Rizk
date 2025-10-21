@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dr. Vivian Rizk's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/v_r-profile-picture-rounded.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="preloader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div id="content" style="display:none;">
+            <!-- your site content (sidenav, etc.) -->
+            <div class="landing">
+                <header class="header" id="hero">
+                    <nav>
+                        <div class="nav">
+                            <div class="col col-1">
+                                <div class="logo">
+                                    <a href="#" data-target="hero"><img src="pictures/v_r-profile-picture-rounded.png" alt="Logo"></a>
+                                </div>
+                            </div>
+                            <div class="col col-2 resp">
+                                <div class="dashes">
+                                    <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                                    <div class="mob-menu-btn-wrap flex">
+                                        <a class="mob-menu-btn" onclick="openNav()">
+                                            <div class="hamburger">
+                                                <span class="hamburger-line hamburger-line-top"></span>
+                                                <span class="hamburger-line hamburger-line-middle"></span>
+                                                <span class="hamburger-line hamburger-line-bottom"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-2 desktop">
+                                <!-- <a href="#" data-target="hero">Home</a> -->
+                                <a href="#" data-target="about">About</a>
+                                <a href="#" data-target="experience">Experience</a>
+                                <a href="#" data-target="education">Education</a>
+                                <a href="#" data-target="skills">Skills</a>
+                                <a href="#" data-target="teaching">Teaching</a>
+                                <a href="#" data-target="research">Research</a>
+                                <a href="#" data-target="awards" title="Honors">Awards</a>
+                                <a href="#" data-target="contact">Contact</a>
+                            </div>
+                            <div class="adjust-btn">
+                                <!-- <button id="theme-toggle"> -->
+                                    <label id="theme-toggle" class="switch">
+                                        <input id="input" type="checkbox" />
+                                        <div class="slider round">
+                                            <div class="sun-moon">
+                                                <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                            
+                                                <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                                <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                                                    <circle cx="50" cy="50" r="50"></circle>
+                                                </svg>
+                                            </div>
+                                            <div class="stars">
+                                                <svg id="star-1" class="star" viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                                    </path>
+                                                </svg>
+                                                <svg id="star-2" class="star" viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                                    </path>
+                                                </svg>
+                                                <svg id="star-3" class="star" viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                                    </path>
+                                                </svg>
+                                                <svg id="star-4" class="star" viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </label>
+                                <!-- </button> -->
+                            </div>
+                        </div>
+                    </nav>
+    
+                    <div class="intro">
+                        <div class="in-intro">
+                            <div class="title">
+                                <h2>Dr. Vivian Rizk</h2>
+                                <h1>Doctor of Philosophy in Mathematics</h1>
+                                <p>Specializing in Applied Mathematics, Mathematical Modeling, and Numerical Analysis.</p>
+                                <p>Passionate about advancing mathematical research and inspiring the next generation of learners.</p>
+                                <div class="btn">
+                                    <a href="#" data-target="teaching">
+                                        <button>Teaching</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                <div class="sidenav-links">
+                    <!-- <a href="#" data-target="hero">Home</a> -->
+                    <a href="#" data-target="about">About</a>
+                    <a href="#" data-target="experience">Experience</a>
+                    <a href="#" data-target="education">Education</a>
+                    <a href="#" data-target="skills">Skills</a>
+                    <a href="#" data-target="teaching">Teaching</a>
+                    <a href="#" data-target="research">Research</a>
+                    <a href="#" data-target="awards" title="Honors">Awards</a>
+                    <a href="#" data-target="contact">Contact</a>
+                </div>
+
+                <div class="separator">
+                    <hr class="line">
+                    <img src="pictures/v_r-profile-picture-rounded.png" alt="Separator Image" class="separator-image">
+                    <hr class="line">
+                </div>
+
+                <div class="adjust-btn">
+                    <button id="resp-theme-toggle">Switch to Dark Mode</button>
+                </div>
+        
+                <div class="separator">
+                    <hr class="line">
+                    <img src="pictures/v_r-profile-picture-rounded.png" alt="Separator Image" class="separator-image">
+                    <hr class="line">
+                </div>
+        
+                <div class="resp-social-links">
+                    <a href="https://www.instagram.com/vivian_rizik/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/vivian.rizik.37/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/vivian-rizik/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        
+            <main>
+                <section class="about" id="about">
+                    <div class="in-section">
+                        <div class="content">
+                            <div class="intro">
+                                <h3 class="sub-title">About</h3>
+                                <h1 class="title">Know More About Me</h1>
+        
+                                <div class="text">
+                                    <p>I'm Dr. Rizk, Vivian Rizk. A university lecturer and researcher with a PhD in Mathematics, obtained through joint programs with Sorbonne Université, Université de Technologie de Compiègne (UTC) and Lebanese University.</p>
+                                    <p>My academic interests focus on Applied Mathematics, Numerical Analysis and Partial Differential Equations.</p>
+                                    <p><u>Since 2019</u>, I've been teaching at the Lebanese International University (LIU), where I combine theory and application to make complex mathematical concepts accessible to students.</p>
+                                    <p><b>My ultimate goal?</b> To help you achieve your best and exceed your targets regarding Mathematics.</p>
+                                    <p><b>Let's Grow Together.</b></p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="pictures/v_r-profile-picture-rounded.png" alt="Image">
+                            </div>
+                        </div>
+
+                        <div class="link-container">
+                            <div class="link">
+                                <a href="https://drive.google.com/file/d/1SVzBoCnGtvwqlazgoj0VYh36vmVnGTXA/view"><span>PDF<i class="fa fa-file-pdf-o" aria-hidden="true"></i></span><div class="arrow-icon arrow-right"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="experience" id="experience">
+                    <div class="in-section">
+                        <h3 class="sub-title">Experience</h3>
+                        <h1 class="title">Check Out My Experiences</h1>
+                        <div class="cats">
+                            <div class="cat">
+                                <h2>Doctor of Mathematics</h2>
+                                <div class="text">
+                                    <p>Lebanese International University - Part-time</p>
+                                    <p>Feb 2019 - Present (6 yrs 9 mos) • Lebanon</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Researcher / PhD Student</h2>
+                                <div class="text">
+                                    <p>Université de Technologie de Compiègne (UTC) - Full-time</p>
+                                    <p>Jan 2017 - Sep 2019 (2 yrs 9 mos) • France</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="education" id="education">
+                    <div class="in-section">
+                        <h3 class="sub-title">Education</h3>
+                        <h1 class="title">Here's my Education Showcase List</h1>
+                        <div class="content">
+                            <h2><i class="fa fa-angle-right" aria-hidden="true"></i>PhD in Mathematics</h2>
+                            <div class="line">
+                                <p class="name">Sorbonne Université</p>
+                                <p class="date">2016 - 2019</p>
+                            </div>
+                            <div class="line">
+                                <p class="name">Université de Technologie de Compiègne (UTC)</p>
+                                <p class="date">2016 - 2019</p>
+                            </div>
+                            <div class="line">
+                                <p class="name">Lebanese University - Faculty of Sciences</p>
+                                <p class="date">2016 - 2019</p>
+                            </div>
+                        
+                            <h2><i class="fa fa-angle-right" aria-hidden="true"></i>Master's in Applied Mathematics</h2>
+                            <div class="line">
+                                <p class="name">Lebanese University - Faculty of Sciences</p>
+                                <p class="date">2010 - 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="skills-container">
+                        <div class="in-section">
+                            <h3 class="sub-title">Skills</h3>
+                            <h1 class="title">Catch A View On My Skills</h1>
+                            <div class="skills-list">
+
+                                <h2><i class="fa fa-angle-right" aria-hidden="true"></i>Mathematical Expertise</h2>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Applied Mathematics</span>
+                                        <span class="skill-percentage">96%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="96"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Mathematical Analysis</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="70"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Numerical Analysis</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="85"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Partial Differential Equations</span>
+                                        <span class="skill-percentage">35%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="35"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Mathematical Modeling</span>
+                                        <span class="skill-percentage">15%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="15"></div>
+                                    </div>
+                                </div>
+
+                                <h2><i class="fa fa-angle-right" aria-hidden="true"></i>Tools & Software</h2>
+        
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">LaTeX</span>
+                                        <span class="skill-percentage">50%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="50"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">MATLAB</span>
+                                        <span class="skill-percentage">65%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="65"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Maple</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="80"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">SPSS</span>
+                                        <span class="skill-percentage">45%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="45"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Microsoft Office</span>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="70"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">C++</span>
+                                        <span class="skill-percentage">40%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="40"></div>
+                                    </div>
+                                </div>
+
+                                <h2><i class="fa fa-angle-right" aria-hidden="true"></i>Academic Skills</h2>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">University Teaching</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="90"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Tutoring</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-percentage="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="teaching" id="teaching">
+                    <div class="in-section">
+                        <h3 class="sub-title">Teaching</h3>
+                        <h1 class="title">List of Courses I Teach</h1>
+
+                        <div class="text">
+                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>I teach a variety of undergraduate and graduate mathematics courses, focusing on helping students bridge abstract concepts with real-world applications. My approach emphasizes analytical thinking, problem-solving, and clarity in mathematical communication.</p>
+                        </div>
+
+                        <div class="cats">
+                            <div class="cat">
+                                <h2>Calculus I & II</h2>
+                                <div class="text">
+                                    <p>Fundamentals of differentiation and integration, applied examples for engineering students.</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Linear Algebra</h2>
+                                <div class="text">
+                                    <p>Vector spaces, eigenvalues, and matrix transformations.</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Discrete Mathematics</h2>
+                                <div class="text">
+                                    <p>The study of mathematical structures that are distinct and separate, such as integers, graphs and logic.</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Numerical Analysis</h2>
+                                <div class="text">
+                                    <p>Approximation methods, error analysis, and computational modeling using MATLAB.</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Differential Equations</h2>
+                                <div class="text">
+                                    <p>Ordinary and partial differential equations with real-life modeling applications.</p>
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <h2>Applied Mathematics</h2>
+                                <div class="text">
+                                    <p>Mathematical modeling and simulation for real-world systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="research" id="research">
+                    <div class="in-section">
+                        <h3 class="sub-title">Research</h3>
+                        <h1 class="title">Areas of research, current work and published papers / collaborations.</h1>
+
+                        <div class="text">
+                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>My research as a Doctor, focuses on developing mathematical models to describe complex physical and engineering systems. My work lies at the intersection of Applied Mathematics, Partial Differential Equations (PDEs) and Numerical Analysis.</p>
+                        </div>
+
+                        <div class="content">
+                            <h4>Research areas:</h4>
+                            <ul>
+                                <li>Mathematical Modeling</li>
+                                <li>Numerical Methods for PDEs</li>
+                                <li>Fluid Dynamics and Heat Transfer</li>
+                                <li>Computational Mathematics</li>
+                                <li>Optimization Techniques</li>
+                            </ul>
+                            <h4>Selected publications:</h4>
+                            <ul>
+                                <li>“Numerical Simulation of Nonlinear PDE Systems in Fluid Flow” - Journal of Applied Mathematics, 2019.</li>
+                                <li>“Error Estimation in Finite Element Methods for Heat Transfer Problems” - Applied Numerical Methods, 2018.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="awards" id="awards">
+                    <div class="in-section">
+                        <h3 class="sub-title">Awards</h3>
+                        <h1 class="title">Academic and professional recognition, listed with year and description.</h1>
+                        <div class="cats">
+                            <div class="cat">
+                                <div class="icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                                <h2>Best Teaching Award, Lebanese International University</h2>
+                                <h4>2022</h4>
+                            </div>
+                            <div class="cat">
+                                <div class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                                <h2>Doctoral Excellence Grant, Université de Technologie de Compiègne</h2>
+                                <h4>2018</h4>
+                            </div>
+                            <div class="cat">
+                                <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+                                <h2>Graduate Honors in Applied Mathematics, Lebanese University</h2>
+                                <h4>2015</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        
+            <footer id="contact">
+                <div class="footer">
+                    <div class="row row-2">
+                        <div class="col col-1">
+                            <h3>Vivian Rizk</h3>
+                            <p>Crafting digital experiences that blend design, logic, and purpose. From concept to deployment — I turn visions into full-stack solutions.</p>
+                            <div class="social-media">
+                                <a href="https://www.instagram.com/vivian_rizik/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/vivian.rizik.37/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/vivian-rizik/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <h3>Office Hours</h3>
+                            <p>Monday: 8:00 AM - 9:00 AM</p>
+                            <p>Tuesday: 10:00 AM - 10:30 AM</p>
+                            <p>Wednesday: 9:00 AM - 9:30 AM</p>
+                            <p>Thursday: 11:30 AM - 1:00 PM</p>
+                            <p>Friday: -</p>
+                            <p>Saturday: -</p>
+                            <p>Sunday: -</p>
+                        </div>
+                        <div class="col col-4">
+                            <h3>Contact Info</h3>
+                            <a href="mailto:vivian.rizk@liu.edu.lb"><i class="fa fa-envelope" aria-hidden="true"></i> Email: <br>vivian.rizk@liu.edu.lb</a>
+                            <a href="tel:+96176134251"><i class="fa fa-phone" aria-hidden="true"></i> Phone: <br>+961 76 134 251</a>
+                        </div>
+                    </div>
+                    <div class="separator">
+                        <hr class="line line-1">
+                        <img src="pictures/v_r-profile-picture-rounded.png" alt="Separator Image" class="separator-image">
+                        <hr class="line line-2">
+                    </div>
+                    <div class="row row-3">
+                        <div class="col col-1">
+                            <p>&copy; 2025 • Vivian Rizk | All Rights Reserved.</p>
+                        </div>
+                        <div class="col col-2">
+                            <p>Designed & Developed By <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+        </div>
+        
+        <script src="script.js"></script>
+    </div>
+
+</body>
+</html>
